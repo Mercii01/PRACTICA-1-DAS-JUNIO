@@ -1,1 +1,1 @@
-![Requisitos Funcionales](./docs/requisitos.pdf)
+![Requisitos Funcionales](./docs/requisitos.png)
