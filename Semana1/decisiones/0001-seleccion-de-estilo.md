@@ -1,6 +1,6 @@
 # Seleccion-De-Estilo
 
-* Status: proposed
+* Status: accepted
 * Deciders: Sergio,Miguel
 * Date: 2024-02-09
 
