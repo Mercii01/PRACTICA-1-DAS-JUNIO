@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>78</x>
+      <y>180</y>
+      <w>306</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>Cliente</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>702</x>
+      <y>30</y>
+      <w>534</w>
+      <h>570</h>
+    </coordinates>
+    <panel_attributes>Servidor</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>492</x>
+      <y>294</y>
+      <w>120</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+Gateway API Rest</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>312</x>
+      <y>300</y>
+      <w>192</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+ </panel_attributes>
+    <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>606</x>
+      <y>336</y>
+      <w>108</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>258</x>
+      <y>222</y>
+      <w>60</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>App Móvil
+--
+-nombre
+-version
+--
++iniciar()
++cerrar()
++vincular()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>258</x>
+      <y>354</y>
+      <w>60</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>App Web
+--
+-nombre
+-version
+--
++iniciar()
++cerrar()
++vincular()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>312</x>
+      <y>360</y>
+      <w>192</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+ </panel_attributes>
+    <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>858</x>
+      <y>486</y>
+      <w>252</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+Microsoft JDBC Driver Version 12.6 para SQL Server</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>738</x>
+      <y>192</y>
+      <w>132</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Cliente</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>1098</x>
+      <y>186</y>
+      <w>120</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Reparto y rutas</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>738</x>
+      <y>354</y>
+      <w>138</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>Pedidos</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>1098</x>
+      <y>360</y>
+      <w>132</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Estadísticas</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>96</x>
+      <y>264</y>
+      <w>114</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Dispositivo
+--
++accederDatos()
++aniadirDatos()
++borrarDatos()
++enviarDatos()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>204</x>
+      <y>288</y>
+      <w>66</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>204</x>
+      <y>372</y>
+      <w>66</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>774</x>
+      <y>444</y>
+      <w>96</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0;140.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1020</x>
+      <y>234</y>
+      <w>90</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>130.0;20.0;10.0;20.0;10.0;420.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>864</x>
+      <y>234</y>
+      <w>84</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;20.0;120.0;20.0;120.0;420.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1104</x>
+      <y>444</y>
+      <w>102</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>150.0;10.0;150.0;120.0;10.0;120.0</additional_attributes>
+  </element>
+</diagram>
