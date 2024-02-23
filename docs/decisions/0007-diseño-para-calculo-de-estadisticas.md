@@ -19,7 +19,7 @@ El calculo de estadisticas debera proporcionar información valiosa sobre el est
 
 ## Decision Outcome
 
-Chosen option: "0007-1-GestorEstadisticas como microservicio", because Realiza todas las funciones pedidas por el cliente de manera eficiente, ademas permite una mayor escalabilidad en nuestro sistema software.
+Chosen option: "0007-1-GestorEstadisticas con patron Mediator", because Realiza todas las funciones pedidas por el cliente de manera eficiente, ademas permite una mayor escalabilidad en nuestro sistema software.
 
 ### Positive Consequences
 
