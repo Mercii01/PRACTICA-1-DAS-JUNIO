@@ -1,6 +1,7 @@
 # Selección-De-Patrón-De-Gestión-De-Algoritmos-De-Rutas
 
 * Status: proposed
+* Deciders: Sergio, Miguel
 * Date: 2024-02-29
 
 ## Context and Problem Statement
