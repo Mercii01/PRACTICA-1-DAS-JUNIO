@@ -1,7 +1,7 @@
 # Seleccion-De-Middleware-Para-Ejecutar-Microservicios
 
 * Status: proposed
-* Deciders: Sergio
+* Deciders: Sergio, Miguel
 * Date: 2024-03-01
 
 ## Context and Problem Statement
