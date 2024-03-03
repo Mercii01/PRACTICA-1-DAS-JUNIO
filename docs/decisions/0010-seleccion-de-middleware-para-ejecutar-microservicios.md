@@ -1,12 +1,12 @@
 # Seleccion-De-Middleware-Para-Ejecutar-Microservicios
 
-* Status: proposed
-* Deciders: Sergio, Miguel
+* Status: accepted
+* Deciders: Sergio
 * Date: 2024-03-01
 
 ## Context and Problem Statement
 
-Es necesario añadir un middleware que nos permita ejecutar los microservicios que hemos añadido. Por ello, como equipo hemos investigado sobre el caso y finalmente hemos encontrado varios servicios que podrian resolver el problema.
+Es necesario añadir un middleware que nos permita ejecutar los microservicios que hemos añadido. Por ello, como equipo hemos investigado sobre el caso y finalmente hemos encontrado varios servicios que podrian resolver el problema. Para añadirlo, se creará una capa de menor nivel llamada "Capa de Servicios" que se utilizará por la capa de negocio y la capa de clientes.
 
 ## Decision Drivers
 
@@ -36,7 +36,7 @@ Chosen option: "0010-1-Amazon Lambda", because Permitiría una ejecucion mas seg
 
 ### 0010-1-Amazon Lambda
 
-AWS Lambda permite ejecutar el código en respuesta a los eventos y administra los recursos informáticos. Por tanto, se encargaria de ejecutar nuestros microservicios de manera segura.
+AWS Lambda permite ejecutar el código en respuesta a los eventos y administra los recursos informáticos. Por tanto, se encargaria de ejecutar nuestros microservicios de manera segura. Este se añadira en la Capa de Servicios para poder ser utilizado.
 
 * Good, because Alta escalabilidad
 * Good, because Un servicio muy eficiente
@@ -46,7 +46,7 @@ AWS Lambda permite ejecutar el código en respuesta a los eventos y administra l
 
 ### 0010-2-Docker Container
 
-Docker Container permite creacion e implementacion de aplicaciones. Este servicio incluye lo necesario para ejecutar el codigo, ya sea las bibliotecas, herramientas y tiempo de ejecucion.
+Docker Container permite creacion e implementacion de aplicaciones. Este servicio incluye lo necesario para ejecutar el codigo, ya sea las bibliotecas, herramientas y tiempo de ejecucion. Este se añadira en la Capa de Servicios para poder ser utilizado.
 
 * Good, because Permite la automatizacion de la ejecución
 * Good, because Control de versiones incluido

@@ -1,7 +1,7 @@
 # Selección-De-Patrón-De-Gestión-De-Algoritmos-De-Rutas
 
-* Status: proposed
-* Deciders: Sergio, Miguel
+* Status: accepted
+* Deciders: Sergio
 * Date: 2024-02-29
 
 ## Context and Problem Statement
@@ -37,7 +37,7 @@ Chosen option: "0008-1-Uso de patron de diseño Strategy", because El patron Str
 
 ### 0008-1-Uso de patron de diseño Strategy
 
-En nuestro sistema software, habrán dos tipos de algoritmos de optimizacion que se seleccionaran en función de la demora del camión. Para ello decidimos añadir el patrón Strategy en el módulo de rutas donde se escogerá el algoritmo necesario en base a las necesidades. Dentro del módulo de rutas, se tiene una clase GestorAlgoritmos que recibe las solicitudes del módulo EventChannels y llama a la clase Context para elegir que algoritmo a ejecutar. La clase Context guarda el estado del tráfico en tiempo real y calcula cuál de los dos algoritmos se debería ejecutar en cada momento. Existe una interfaz Strategy, que contiene un método execute que utiliza los dos tipos de algoritmos. También, se creará una clase AlgoritmoRutaA y AlgoritmoRutaB que contienen los métodos de optimización e implementarán la interfaz Strategy.
+En nuestro sistema software, habrán dos tipos de algoritmos de optimizacion que se seleccionaran en función de la demora del camión. Para ello decidimos añadir el patrón Strategy en el módulo de rutas donde se escogerá el algoritmo necesario en base a las necesidades. Para conectar este patron, se crea una clase "RepartoYRutas" que realiza las funciones necessarias para una llamada a la clase Context para elegir que algoritmo a ejecutar. La clase Context guarda el estado del tráfico en tiempo real y calcula cuál de los dos algoritmos se debería ejecutar en cada momento. Existe una interfaz Strategy, que contiene un método execute que utiliza los dos tipos de algoritmos. También, se creará una clase AlgoritmoRutaA y AlgoritmoRutaB que contienen los métodos de optimización e implementarán la interfaz Strategy.
 
 * Good, because El patron Strategy soluciona los problemas que se pueden encontrar en la eleccion de algortimo.
 * Good, because Elige correctamente según el contexto de la situación
