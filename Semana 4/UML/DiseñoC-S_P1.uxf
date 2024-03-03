@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>0</x>
+      <y>408</y>
+      <w>376</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>Capa Cliente</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>728</x>
+      <y>0</y>
+      <w>1160</w>
+      <h>1080</h>
+    </coordinates>
+    <panel_attributes>Capa Lógica de Negocio</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>464</x>
+      <y>568</y>
+      <w>176</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+Gateway API Rest</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>56</x>
+      <y>472</y>
+      <w>176</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>App Móvil
+--
+-nombre
+-version
+-userSesion
+--
++generarPeticionHTTP()
++accederDatosEmpresa()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>64</x>
+      <y>648</y>
+      <w>176</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>App Web
+--
+-nombre
+-version
+-userSesion
+--
++generarPeticionHTTP()
++accederDatosEmpresa()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>2008</x>
+      <y>464</y>
+      <w>448</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Capa Acceso BBDD</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1880</x>
+      <y>568</y>
+      <w>144</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+uses JDBC
+</panel_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>768</x>
+      <y>232</y>
+      <w>240</w>
+      <h>296</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Microservice&gt;&gt;
+Estadística 
+--
+--
++consultarInfoCliente()
++proporcionarInforCliente()
++consultarEstadoPedido()
++proporcionarEstadoPedido()
++consultarSituacionCamiones()
++proporcionarSituacionCamiones()
++manejarLocalización()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>768</x>
+      <y>592</y>
+      <w>240</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>Cliente
+--
+-id
+-nombre
+-apellidos
+-email
+-telefono
+--
++modificarDatosCliente()
++consultarDatosCliente()
++crearDatosCliente()
++eliminarDatosCliente()
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>0</x>
+      <y>288</y>
+      <w>376</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+Asumimos que todas las clases
+tienen getters y setters y todos los métodos constructores y 
+destructores</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>1240</x>
+      <y>24</y>
+      <w>640</w>
+      <h>536</h>
+    </coordinates>
+    <panel_attributes>Reparto y Rutas</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>2032</x>
+      <y>544</y>
+      <w>416</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+Microsoft JDBC Driver Version 12.6 para SQL Server</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>368</x>
+      <y>600</y>
+      <w>112</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+HTTP REST</panel_attributes>
+    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>632</x>
+      <y>600</y>
+      <w>112</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+HTTP REST</panel_attributes>
+    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1424</x>
+      <y>584</y>
+      <w>224</w>
+      <h>224</h>
+    </coordinates>
+    <panel_attributes>Pedidos
+--
+-idPedido
+-estado
+-situación
+-numIntentos
+-precioTotal
+-cantidadProductos
+--
++realizarPedido()
++consultarPedido()
++modificarPedido()
++eliminarPedido()
++comprobarNumIntentos()
++realizarPago()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1336</x>
+      <y>904</y>
+      <w>288</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+Amazon Pay Checkout v2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1512</x>
+      <y>800</y>
+      <w>48</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+uses</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1656</x>
+      <y>56</y>
+      <w>200</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Strategy
+Algoritmo
+--
++execute(data)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1272</x>
+      <y>72</y>
+      <w>168</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Context
+--
+-tipoAlgoritmo
+-tiempoLimite
+--
++seleccionarAlgoritmo()
++ejecutarRuta()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1680</x>
+      <y>112</y>
+      <w>24</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1800</x>
+      <y>112</y>
+      <w>24</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1624</x>
+      <y>152</y>
+      <w>104</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>AlgoritmoRutaA
+--
+-datoEntrada
+-unidad
+--
++optimizar()
++calcularTiempo()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1752</x>
+      <y>152</y>
+      <w>104</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>AlgoritmoRutaB
+--
+-datoEntrada
+-unidad
+--
++optimizar()
++calcularTiempo()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1432</x>
+      <y>80</y>
+      <w>240</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;280.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1792</x>
+      <y>512</y>
+      <w>24</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1352</x>
+      <y>176</y>
+      <w>24</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>1160</y>
+      <w>952</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+Amazon Lambda</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>768</x>
+      <y>56</y>
+      <w>280</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+GPS Receiver Driver V1.10.03.22</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>0</x>
+      <y>1120</y>
+      <w>1888</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>Capa de Servicios</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1016</x>
+      <y>208</y>
+      <w>208</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+El microservicio
+Estadística cuenta con
+el método manejarLocalizacion()
+llama al componente 
+GPS Receiver Driver V1.10.03.22</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1208</x>
+      <y>584</y>
+      <w>208</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+La clase Pedidos cuenta con
+el método realizarPago()
+llama al componente 
+Amazon Pay Checkout v2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1368</x>
+      <y>1072</y>
+      <w>48</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+uses</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1272</x>
+      <y>240</y>
+      <w>176</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>RepartoyRutas
+--
+-flotaTransporte
+-rutas
+--
++gestionarFlota()
++calcularRuta()
++gestionarPublisher()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>808</y>
+      <w>48</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+uses</panel_attributes>
+    <additional_attributes>10.0;380.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>296</x>
+      <y>1008</y>
+      <w>376</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+Las capas Cliente y Lógica de Negocio cuentan con el mismo
+nivel de responsabilidad. Para ejecutar los microservicios 
+consideramos necesario la creación de una nueva capa que
+será la de servicios que se encontrará por debajo con un nivel
+de responsabilidad menor donde contará con un componente
+llamado Amazon Lambda. Esta capa de servicios será usada
+por la capa Cliente y Lógica de Negocio</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>872</x>
+      <y>128</y>
+      <w>48</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+uses</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1560</x>
+      <y>264</y>
+      <w>176</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+TipoIncidencia
+--
+CAMIONAVERIADO,
+DEMORA,
+NOENTREGAPEDIDO
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1272</x>
+      <y>432</y>
+      <w>192</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Publisher
+ReportadorIncidencias
+--
+-listeners
+--
++subscribe()
++unsuscribe()
++notifySubscribers()
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1488</x>
+      <y>472</y>
+      <w>120</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>MensajesTelefono
+--
+--
++update()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1608</x>
+      <y>360</y>
+      <w>96</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Suscriber
+--
++update()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1624</x>
+      <y>472</y>
+      <w>120</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>CanalSistema
+--
+--
++update()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1760</x>
+      <y>472</y>
+      <w>112</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>CanalComunicacion
+--
+--
++update()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1728</x>
+      <y>360</y>
+      <w>144</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+Canales de comunicación
+como Instagram y otros 
+que se quieran
+añadir en un futuro</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1696</x>
+      <y>416</y>
+      <w>136</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1656</x>
+      <y>416</y>
+      <w>24</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1584</x>
+      <y>416</y>
+      <w>48</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>40.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1312</x>
+      <y>328</y>
+      <w>24</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1384</x>
+      <y>336</y>
+      <w>192</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>220.0;10.0;10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1424</x>
+      <y>376</y>
+      <w>104</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1504</x>
+      <y>376</y>
+      <w>120</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1424</x>
+      <y>200</y>
+      <w>216</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>250.0;10.0;10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1440</x>
+      <y>232</y>
+      <w>368</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>440.0;10.0;440.0;30.0;10.0;30.0</additional_attributes>
+  </element>
+</diagram>
