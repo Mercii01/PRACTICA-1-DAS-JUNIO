@@ -1,12 +1,12 @@
 # Alternativa-Diseño-De-Clase-Clientes
 
 * Status: accepted
-* Deciders: Sergio
+* Deciders: Sergio, Miguel
 * Date: 2024-03-01
 
 ## Context and Problem Statement
 
-El módulo de clientes permite acceder a los datos personales de los clientes consistentes en identificador de cliente, nombre, apellidos, email y teléfono móvil.
+El módulo de clientes permite acceder a los datos personales de los clientes consistentes en identificador de cliente, nombre, apellidos, email, teléfono móvil, etc.
 
 ## Decision Drivers
 
@@ -23,7 +23,9 @@ Chosen option: "0014-1-Creación de la clase Cliente", because Realiza correctam
 ### Positive Consequences
 
 * Facilidad de mantener
-* El sistema es mas sencillo de leer
+* El sistema es más sencillo de leer
+* La modificación de propiedades y métodos es más fácil de solucionar
+* No son necesarias dos clases como un microservicio
 
 ### Negative Consequences
 

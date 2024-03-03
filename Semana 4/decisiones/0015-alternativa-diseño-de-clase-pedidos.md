@@ -1,7 +1,7 @@
 # Alternativa-Diseño-De-Clase-Pedidos
 
 * Status: accepted
-* Deciders: Sergio
+* Deciders: Sergio, Miguel
 * Date: 2024-03-01
 
 ## Context and Problem Statement
@@ -22,12 +22,14 @@ Chosen option: "0015-1-Creación de la clase Pedidos", because Realiza de manera
 
 ### Positive Consequences
 
-* Sencillo y legible para el sistema
-* Facil mantenimiento
+* Sencillo y legible para la arquitectura y el sistema
+* Mantenimiento de pedidos sencilla
+* Mejora del rendimiento
 
 ### Negative Consequences
 
-* Dependencia de componentes externos.
+* Dependencia de componentes externos para realizar el pago
+* Complejidad de mantenimiento del pago
 
 ## Pros and Cons of the Options
 
@@ -36,8 +38,8 @@ Chosen option: "0015-1-Creación de la clase Pedidos", because Realiza de manera
 Se crea la clase Pedidos que contiene las funcionalidades y atributos necesarias para realizar un pedido y comprobar el número de intentos, asi como poder comunicarse con el componente "Amazon Pay Checkout v2" para realizar el pago.
 
 * Good, because Es una idea sencilla que realiza los requisitos del cliente
-* Good, because Eficiente ya que esta conectada a la base de datos
-* Good, because Facil legibilidad del sistema
+* Good, because Eficiente ya que está conectada a la base de datos
+* Good, because Fácil legibilidad del sistema
 * Bad, because La funcionalidad de Pedidos depende de un componente que si falla, se tiene que detener completamente.
 
 ## Links

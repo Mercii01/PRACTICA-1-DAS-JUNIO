@@ -1,7 +1,7 @@
 # Alternativa-Diseño-Del-Microservicio-De-Estadisticas
 
 * Status: accepted
-* Deciders: Sergio
+* Deciders: Sergio, Miguel
 * Date: 2024-03-01
 
 ## Context and Problem Statement
@@ -18,16 +18,19 @@ El sistema cuenta con un módulo de estadísticas que proporciona información v
 
 ## Decision Outcome
 
-Chosen option: "0016-1-Creación del microservicio Estadisticas.", because Este microservicio realiza de manera correcta todas las funciones pedidas, ademas de hacerlo con eficiencia.
+Chosen option: "0016-1-Creación del microservicio Estadisticas.", because Este microservicio realiza de manera correcta todas las funciones pedidas, incluso con más eficiencia.
 
 ### Positive Consequences
 
 * El microservicio puede seguir ejecutando las funciones que no intervengan con el componente
-* Es mas facil de mantener
+* Es mas fácil de mantener
+* Escalabilidad independiente
+* Reducción del acoplamiento
 
 ### Negative Consequences
 
-* Dependencia para una funcion en un componente externo.
+* Dependencia para una función en un componente externo.
+* Dificultad en la depuración de problemas o errores.
 
 ## Pros and Cons of the Options
 
