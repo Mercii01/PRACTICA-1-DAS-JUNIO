@@ -1,12 +1,12 @@
 # Selección-De-Patrón-De-Gestión-De-Algoritmos-De-Rutas
 
 * Status: accepted
-* Deciders: Sergio
+* Deciders: Sergio, Miguel
 * Date: 2024-02-29
 
 ## Context and Problem Statement
 
-Las funcionalidades de RepartoYRutas son varias, por lo que se debera utilizar un modulo para acoplar estas funcionalidades. Entre estas funcionalidaes, se encuentra la gestion de algoritmos, la gestión cuenta con 2 algoritmos de optimización que se seleccionan en función de la demora del camión con un límite de 30 minutos.
+Las funcionalidades de RepartoYRutas son varias, por lo que se deberá utilizar un módulo para acoplar estas funcionalidades. Entre estas funcionalidaes, se encuentra la gestión de algoritmos, la gestión cuenta con 2 algoritmos de optimización que se seleccionan en función de la demora del camión con un límite de 30 minutos.
 
 ## Decision Drivers
 
@@ -21,11 +21,11 @@ Las funcionalidades de RepartoYRutas son varias, por lo que se debera utilizar u
 
 ## Decision Outcome
 
-Chosen option: "0008-1-Uso de patron de diseño Strategy", because El patron Strategy soluciona los problemas que se pueden encontrar en la eleccion de algortimo de manera mas optima y menos compleja.
+Chosen option: "0008-1-Uso de patron de diseño Strategy", because El patrón Strategy soluciona los problemas que se pueden encontrar en la elección de algoritmo de manera más óptima y menos compleja.
 
 ### Positive Consequences
 
-* Permite una eleccion sencilla de algoritmos segun la información dada.
+* Permite una elección sencilla de algoritmos segín la información dada.
 * Añade posibilidad de cambiar de algoritmos durante la ejecucion del programa.
 * Se puede modificar la informacion de manera sencilla para la eleccion de algoritmos.
 
@@ -46,19 +46,19 @@ En nuestro sistema software, habrán dos tipos de algoritmos de optimizacion que
 
 ### 0008-1-Uso de patron de diseño State
 
-El uso del patron de diseño State es similar al patron Strategy. Segun el contexto dado se creara una clase que se hereda de la interfaz State, esto hace que se pueda escoger un algoritmo segun el contexto en tiempo real como pide el cliente.
+El uso del patrón de diseño State es similar al patrón Strategy. Según el contexto dado se creará una clase que se hereda de la interfaz State, esto hace que se pueda escoger un algoritmo según el contexto en tiempo real como pide el cliente.
 
 * Good, because Escoge algoritmos correctamente
 * Bad, because Es menos eficiente que el patrón Strategy
 
 ### 0008-1-Uso de patron de diseño Template Method
 
-El patron de diseño Template Method es distinta a las anteriores comentadas, pero se puede utilizar en nuestro sistema software para escoger la rutas. Este patron ira descomponiendo el algoritmo en metodos y dependiendo del contexto que se da puede ir siguiendo unos pasos u otros para obtener la ruta mas optima.
+El patrón de diseño Template Method es distinta a las anteriores comentadas, pero se puede utilizar en nuestro sistema software para escoger la rutas. Este patrón ira descomponiendo el algoritmo en métodos y dependiendo del contexto que se da puede ir siguiendo unos pasos u otros para obtener la ruta mas óptima.
 
 * Good, because Consigue la ruta mas optima
-* Bad, because Es un patron mas dificil de implementar en este contexto.
-* Bad, because Depende completamente de una buena implementacion de logica del algoritmo.
-* Bad, because Es mas complejo.
+* Bad, because Es un patrón mas difícil de implementar en este contexto.
+* Bad, because Depende completamente de una buena implementacion de lógica del algoritmo.
+* Bad, because Es más complejo.
 
 ## Links
 

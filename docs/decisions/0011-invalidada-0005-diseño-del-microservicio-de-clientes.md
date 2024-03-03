@@ -6,7 +6,7 @@
 
 ## Context and Problem Statement
 
-Para abordar el manejo de informacion de los clientes, se decidió crear dos clases, donde una actuara como el objeto Cliente, mientras que la otra será el microservicio que gestionara las solicitudes de la informacion de clientes.
+Para abordar el manejo de información de los clientes, se decidió crear dos clases, donde una actuará como el objeto Cliente, mientras que la otra será el microservicio que gestionará las solicitudes de la información de clientes.
 
 ## Decision Drivers
 
@@ -18,7 +18,7 @@ Para abordar el manejo de informacion de los clientes, se decidió crear dos cla
 
 ## Decision Outcome
 
-Chosen option: "0005-1-Invalidar decision", because Hace falta arreglar los errores producidos en esta decision.
+Chosen option: "0005-1-Invalidar decision", because Es necesario arreglar los errores producidos en esta decisión.
 
 ## Pros and Cons of the Options
 

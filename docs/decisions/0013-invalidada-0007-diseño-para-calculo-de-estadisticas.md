@@ -6,7 +6,7 @@
 
 ## Context and Problem Statement
 
-El calculo de estadisticas debera proporcionar información valiosa sobre el estado de los pedidos y la situación en tiempo real de los camiones, asi como información de clientes.
+El calculo de estadísticas debera proporcionar información valiosa sobre el estado de los pedidos y la situación en tiempo real de los camiones, asi como información de clientes.
 
 ## Decision Drivers
 
@@ -18,7 +18,7 @@ El calculo de estadisticas debera proporcionar información valiosa sobre el est
 
 ## Decision Outcome
 
-Chosen option: "0013-1-Invalidar desicion", because la invalidacion de la desicion nos permitirá realizarla nuevamente pero de manera correcta.
+Chosen option: "0013-1-Invalidar desicion", because la invalidacion de la decisión nos permitirá realizarla nuevamente de forma correcta.
 
 ## Pros and Cons of the Options
 

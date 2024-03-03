@@ -18,7 +18,7 @@ Para abordar el problema de diseñar el microservicio pedido se deben tomar en c
 
 ## Decision Outcome
 
-Chosen option: "0012-1-Invalidar decision", because Al inavlidar la decision, podremos crearla nuevamente de manera correcta.
+Chosen option: "0012-1-Invalidar decision", because Al invalidar la decision, podremos crearla nuevamente de manera correcta.
 
 ## Pros and Cons of the Options
 

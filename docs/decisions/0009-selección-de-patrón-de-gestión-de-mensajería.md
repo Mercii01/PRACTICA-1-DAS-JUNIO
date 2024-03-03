@@ -1,7 +1,7 @@
 # Selección-De-Patrón-De-Gestión-De-Mensajería
 
 * Status: accepted
-* Deciders: Sergio
+* Deciders: Sergio, Miguel
 * Date: 2024-02-29
 
 ## Context and Problem Statement
@@ -43,3 +43,4 @@ Se utilizara el patron Publish-Suscribe para enviar notifiaciones a los remitent
 ## Links
 
 * https://keepcoding.io/blog/desventaja-de-pubsub/#Cual_es_la_desventaja_de_PubSub
+* https://refactoring.guru/design-patterns/observer
